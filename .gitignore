@@ -1,0 +1,11 @@
+# .gitignore file for 'TextProcessor'
+
+# Gradle
+build/
+.gradle/
+
+# IDE
+.idea/
+
+# Input
+data/

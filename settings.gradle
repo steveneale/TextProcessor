@@ -1,0 +1,7 @@
+/**
+ * settings.gradle file for TextProcessor
+ *
+ * 2019 Steve Neale <steveneale3000@gmail.com>
+ */
+
+rootProject.name ="TextProcessor"
