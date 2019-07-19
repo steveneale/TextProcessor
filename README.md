@@ -9,7 +9,9 @@ Tasks that *TextProcessor* performs include:
 
 ## Building
 
-*TextProcessor* is distributed as a (Gradle)[] project, which takes care of all the required dependencies. To build the project from the command line, type the following command from *TextProcessor*'s root directory:
+*TextProcessor* is built using [Gradle](https://gradle.org/), which takes care of all the required dependencies. The Gradle Wrapper has also been included, which will automatically download the latest version of Gradle before building.
+
+To build the project from the command line, type the following command from *TextProcessor*'s root directory:
 
 ```bash
 ./gradlew build
