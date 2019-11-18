@@ -17,6 +17,12 @@ public class CommandLineArgumentParser {
     private static HelpFormatter helpFormatter = new HelpFormatter();
     private static CommandLine commandLine;
     
+    /**
+     * Parse values from command line arguments
+     *
+     * @param args Command line arguments
+     * @return     Array of values as Strings
+     */
     public static String[] parseValues(String[] args) {
         Options options = getCommandLineOptions();
         String[] values = new String[options.getOptions().size()];
@@ -34,6 +40,11 @@ public class CommandLineArgumentParser {
         return values;
     }
 
+    /**
+     * Get command line options
+     *
+     * @return Options object
+     */
     private static Options getCommandLineOptions() {
         Options options = new Options();
 

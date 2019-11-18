@@ -16,6 +16,11 @@ import com.steveneale.textprocessor.processing.LanguageProcessor;
 
 public class TextProcessor {
     
+    /**
+     * Run the TextProcessor
+     *
+     * @param args Command line arguments
+     */
     public static void main(String[] args) {
         String[] arguments = CommandLineArgumentParser.parseValues(args);
         InputProcessor inputProcessor = new InputProcessor();

@@ -21,10 +21,22 @@ public class LanguageProcessor {
 
     private String language;
 
+    /**
+     * Instantiate the LanguageProcessor class
+     *
+     * @param language Language to process, as a String
+     */
     public LanguageProcessor(String language) {
         this.language = language;
     }
 
+    /**
+     * Split an input text into sentences
+     *
+     * @param inputText             Input text as a String
+     * @return                      Sentences as a String Array
+     * @throws FileReadingException The given SentenceModel could not be loaded
+     */
     public String[] splitTextIntoSentences(String inputText) throws FileReadingException {
         try (InputStream modelIn = new FileInputStream("resources/opennlp_models/" +
                                                        this.language + "/" + this.language + "-sent.bin")) {
